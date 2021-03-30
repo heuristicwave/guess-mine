@@ -21,8 +21,5 @@ const io = socketIO.listen(server);
 let sockets = [];
 
 io.on("connection", (socket) => {
-  sockets.push(socket.id);
+  socket.on("helloClient", () => console.log("the client said hello"));
 });
-
-// show sockets
-// setInterval(() => console.log(sockets), 1000);
