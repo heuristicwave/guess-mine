@@ -1,2 +1,1 @@
-body {
-  background-color: red; }
+@-webkit-keyframes exam{0%{color:red}to{color:#00f}}@keyframes exam{0%{color:red}to{color:#00f}}body{background-color:#adff2f;position:sticky}
